@@ -46,3 +46,13 @@ function Dog(name, color) {
   this.color = color;
   this.numLegs = 4;
 }
+
+let terrier = new Dog('grumpy', 'white');
+
+// Verify an Object's Constructor with instanceof
+function House(numBedrooms) {
+  this.numBedrooms = numBedrooms;
+}
+
+let myHouse = new House(6);
+myHouse instanceof House;
