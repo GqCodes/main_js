@@ -126,3 +126,8 @@ Dog.prototype = {
     console.log('My name is ' + this.name);
   },
 };
+
+// setting constructor property when changing the prototype
+function Dog(name) {
+  this.name = name;
+}
