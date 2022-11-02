@@ -1,14 +1,14 @@
 // convert celcius to fahrenheit
-function convertCtoF(celsius) {
+const convertCtoF = (celsius) => {
   let fahrenheit = (celsius * 9) / 5 + 32;
   return fahrenheit;
-}
+};
 
 convertCtoF(30);
 
 // reverse a string
 function reverseString(str) {
-  let result = "";
+  let result = '';
 
   for (let i = str.length - 1; i >= 0; i--) {
     result += str[i];
@@ -16,7 +16,7 @@ function reverseString(str) {
   return result;
 }
 
-reverseString("hello");
+reverseString('hello');
 
 // Factorialize a number
 function factorialize(num) {
@@ -32,8 +32,8 @@ factorialize(5);
 
 // find longest word in string
 function findLongestWordLength(str) {
-  let longestWord = "";
-  let words = str.split(" ");
+  let longestWord = '';
+  let words = str.split(' ');
 
   for (let i = 0; i < words.length; i++) {
     let individualWord = words[i];
@@ -44,7 +44,7 @@ function findLongestWordLength(str) {
   return longestWord.length;
 }
 
-findLongestWordLength("The quick brown fox jumped over the lazy dog");
+findLongestWordLength('The quick brown fox jumped over the lazy dog');
 
 // return largest number in array
 function largestOfFour(arr) {
@@ -75,29 +75,29 @@ function confirmEnding(str, target) {
   return str.slice(str.length - target.length) === target;
 }
 
-confirmEnding("Bastian", "n");
+confirmEnding('Bastian', 'n');
 
 // repeat a string
 function repeatStringNumTimes(str, num) {
-  let finalString = "";
+  let finalString = '';
   for (let i = 0; i < num; i++) {
     finalString += str;
   }
   return finalString;
 }
 
-repeatStringNumTimes("abc", 3);
+repeatStringNumTimes('abc', 3);
 
 // truncate a string
 function truncateString(str, num) {
   let finalStr = str;
   if (str.length > num) {
-    finalStr = str.slice(0, num) + "...";
+    finalStr = str.slice(0, num) + '...';
   }
   return finalStr;
 }
 
-truncateString("A-tisket a-tasket A green and yellow basket", 8);
+truncateString('A-tisket a-tasket A green and yellow basket', 8);
 
 // finders keeper
 function findElement(arr, func) {
@@ -108,7 +108,7 @@ findElement([1, 2, 3, 4], (num) => num % 2 === 0);
 
 // Boo who
 function booWho(bool) {
-  return typeof bool === "boolean";
+  return typeof bool === 'boolean';
 }
 
 booWho(null);
@@ -117,9 +117,9 @@ booWho(null);
 function titleCase(str) {
   return str
     .toLowerCase()
-    .split(" ")
+    .split(' ')
     .map((val) => val.replace(val.charAt(0), val.charAt(0).toUpperCase()))
-    .join(" ");
+    .join(' ');
 }
 
 titleCase("I'm a little tea pot");
@@ -138,7 +138,7 @@ function bouncer(arr) {
   return arr.filter((elem) => !!elem);
 }
 
-bouncer([7, "ate", "", false, 9]);
+bouncer([7, 'ate', '', false, 9]);
 
 // where do I belong
 function getIndexToIns(arr, num) {
@@ -165,9 +165,9 @@ function mutation(arr) {
   return true;
 }
 
-mutation(["hello", "hey"]);
+mutation(['hello', 'hey']);
 
-// chunky monkey
+// chunky monkey challenge
 function chunkArrayInGroups(arr, size) {
   let index = 0;
   let finalArray = [];
@@ -190,4 +190,4 @@ function chunkArrayInGroups(arr, size) {
   return finalArray;
 }
 
-chunkArrayInGroups(["a", "b", "c", "d"], 2);
+chunkArrayInGroups(['a', 'b', 'c', 'd'], 2);
