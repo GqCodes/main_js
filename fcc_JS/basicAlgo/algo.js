@@ -5,3 +5,15 @@ const convertCtoF = (celsius) => {
 };
 
 convertCtoF(30);
+
+// reverse a string
+function reverseString(str) {
+  let result = '';
+
+  for (let i = str.length - 1; i >= 0; i--) {
+    result += str[i];
+  }
+  return result;
+}
+
+reverseString('hello');
