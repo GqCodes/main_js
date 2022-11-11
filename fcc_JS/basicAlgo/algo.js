@@ -45,3 +45,20 @@ function findLongestWordLength(str) {
 }
 
 findLongestWordLength('The quick brown fox jumped over the lazy dog');
+
+// return largest number in array
+function largestOfFour(arr) {
+  let result = [];
+
+  for (let i = 0; i < arr.length; i++) {
+    let individualArray = arr[i];
+    let individualHighestValue = -Infinity;
+    for (let j = 0; j < individualArray.length; j++) {
+      if (individualHighestValue < individualArray[j]) {
+        individualHighestValue = individualArray[j];
+      }
+    }
+    result.push(individualHighestValue);
+  }
+  return result;
+}
