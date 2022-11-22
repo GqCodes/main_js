@@ -132,3 +132,10 @@ function frankenSplice(arr1, arr2, n) {
 }
 
 frankenSplice([1, 2, 3], [4, 5, 6], 1);
+
+// falsey bouncer
+function bouncer(arr) {
+  return arr.filter((elem) => !!elem);
+}
+
+bouncer([7, 'ate', '', false, 9]);
