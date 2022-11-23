@@ -139,3 +139,15 @@ function bouncer(arr) {
 }
 
 bouncer([7, 'ate', '', false, 9]);
+
+// where do I belong
+function getIndexToIns(arr, num) {
+  let index = arr.sort(customSort).findIndex((elem) => elem >= num);
+  return index === -1 ? arr.length : index;
+}
+
+function customSort(a, b) {
+  return a - b;
+}
+
+getIndexToIns([40, 60], 50);
