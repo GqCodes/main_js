@@ -166,3 +166,28 @@ function mutation(arr) {
 }
 
 mutation(['hello', 'hey']);
+
+// chunky monkey challenge
+function chunkArrayInGroups(arr, size) {
+  let index = 0;
+  let finalArray = [];
+  let innerArray = [];
+
+  for (let i = 0; i < arr.length; i++) {
+    innerArray.push(arr[i]);
+    index++;
+
+    if (index === size) {
+      finalArray.push(innerArray);
+      innerArray = [];
+      index = 0;
+    }
+  }
+
+  if (innerArray.length > 0) {
+    finalArray.push(innerArray);
+  }
+  return finalArray;
+}
+
+chunkArrayInGroups(['a', 'b', 'c', 'd'], 2);
