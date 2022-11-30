@@ -16,3 +16,13 @@ const getTea = (numOfCups) => {
   }
   return teaCups;
 };
+
+// Only change code below this line
+const tea4TeamFCC = getTea(40);
+// Only change code above this line
+
+// TERMINOLOGY
+// Function that returns a string representing a cup of green tea
+function prepareGreenTea() {
+  return 'greenTea';
+}
