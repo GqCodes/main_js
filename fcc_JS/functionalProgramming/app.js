@@ -51,3 +51,9 @@ const tea4BlackTeamFCC = getTea(prepareBlackTea, 13);
 // Only change code above this line
 
 console.log(tea4GreenTeamFCC, tea4BlackTeamFCC);
+
+// HAZARDS OF USING IMPERATIVE CODE
+// tabs is an array of titles of each site open within the window
+const Window = function (tabs) {
+  this.tabs = tabs; // We keep a record of the array inside the object
+};
