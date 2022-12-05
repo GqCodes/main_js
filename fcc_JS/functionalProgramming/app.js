@@ -63,3 +63,9 @@ Window.prototype.join = function (otherWindow) {
   this.tabs = this.tabs.concat(otherWindow.tabs);
   return this;
 };
+
+// When you open a new tab at the end
+Window.prototype.tabOpen = function (tab) {
+  this.tabs.push('new tab'); // Let's open a new tab for now
+  return this;
+};
