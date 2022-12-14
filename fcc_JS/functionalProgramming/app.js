@@ -112,3 +112,12 @@ let fixedValue = 4;
 function incrementer() {
   // Only change code above this line
 }
+
+// REFACTOR GLOBAL VARIABLES
+// The global variable
+const bookList = [
+  'The Hound of the Baskervilles',
+  'On The Electrodynamics of Moving Bodies',
+  'Philosophiæ Naturalis Principia Mathematica',
+  'Disquisitiones Arithmeticae',
+];
