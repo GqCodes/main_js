@@ -128,3 +128,15 @@ function add(books, bookName) {
 
   // Change code above this line
 }
+
+// Change code below this line
+function remove(books, bookName) {
+  const newBooks = [...books];
+  let book_index = newBooks.indexOf(bookName);
+  if (book_index >= 0) {
+    newBooks.splice(book_index, 1);
+    return newBooks;
+
+    // Change code above this line
+  }
+}
