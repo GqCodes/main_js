@@ -264,3 +264,19 @@ const ratings = watchList.map((movie) => ({
   rating: movie.imdbRating,
 }));
 // Only change code above this line
+
+console.log(JSON.stringify(ratings));
+
+// IMPLEMENT MAP ON A PROTOTYPE
+// The global variable
+const s = [23, 65, 98, 5];
+
+Array.prototype.myMap = function (callback) {
+  const newArray = [];
+  // Only change code below this line
+  this.forEach((el) => {
+    newArray.push(callback(el));
+  });
+  // Only change code above this line
+  return newArray;
+};
