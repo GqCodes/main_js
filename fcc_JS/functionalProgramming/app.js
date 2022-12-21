@@ -401,3 +401,8 @@ const watchList = [
   },
 ];
 // Only change code below this line
+
+const filteredList = watchList.map((movie) => ({
+  title: movie.Title,
+  rating: movie.imdbRating,
+}));
