@@ -408,3 +408,7 @@ const filteredList = watchList
     rating: movie.imdbRating,
   }))
   .filter((movie) => parseInt(movie.rating) <= 8.0);
+
+// Only change code above this line
+
+console.log(filteredList);
