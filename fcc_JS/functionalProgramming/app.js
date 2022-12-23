@@ -412,3 +412,19 @@ const filteredList = watchList
 // Only change code above this line
 
 console.log(filteredList);
+
+// IMPLEMENT FILTER METHOD ON A PROTOTYPE
+// The global variable
+const s = [23, 65, 98, 5];
+
+Array.prototype.myFilter = function (callback) {
+  // Only change code below this line
+  const newArray = [];
+  this.forEach((item) => {
+    if (callback(item)) {
+      newArray.push(item);
+    }
+  });
+  // Only change code above this line
+  return newArray;
+};
