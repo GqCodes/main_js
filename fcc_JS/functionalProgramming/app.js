@@ -437,3 +437,14 @@ const new_s = s.myFilter(function (item) {
 function sliceArray(anim, beginSlice, endSlice) {
   return anim.slice(beginSlice, endSlice);
 }
+
+const inputAnim = ['Cat', 'Dog', 'Tiger', 'Zebra', 'Ant'];
+sliceArray(inputAnim, 1, 3);
+
+// REMOVE ELEMENTS FROM ARRAY USIGN SLICE
+function nonMutatingSplice(cities) {
+  // Only change code below this line
+  return cities.slice(0, 3);
+
+  // Only change code above this line
+}
