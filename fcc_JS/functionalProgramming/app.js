@@ -428,3 +428,12 @@ Array.prototype.myFilter = function (callback) {
   // Only change code above this line
   return newArray;
 };
+
+const new_s = s.myFilter(function (item) {
+  return item % 2 === 1;
+});
+
+// RETURN PART OF ARRAY USING SLICE METHOD
+function sliceArray(anim, beginSlice, endSlice) {
+  return anim.slice(beginSlice, endSlice);
+}
