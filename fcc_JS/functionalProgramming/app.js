@@ -448,3 +448,11 @@ function nonMutatingSplice(cities) {
 
   // Only change code above this line
 }
+
+const inputCities = ['Chicago', 'Delhi', 'Islamabad', 'London', 'Berlin'];
+nonMutatingSplice(inputCities);
+
+// COMBINE TWO ARRAYS USING CONCAT METHOD
+function nonMutatingConcat(original, attach) {
+  first.concat(second);
+}
