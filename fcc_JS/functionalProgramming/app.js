@@ -456,3 +456,15 @@ nonMutatingSplice(inputCities);
 function nonMutatingConcat(original, attach) {
   first.concat(second);
 }
+
+const first = [1, 2, 3];
+const second = [4, 5];
+nonMutatingConcat(first, second);
+
+// ADD ELEMENTS TO END OF AN ARRAY USING CONCAT INSTEAD OF PUSH
+function nonMutatingPush(original, newItem) {
+  // Only change code below this line
+  return original.concat(newItem);
+
+  // Only change code above this line
+}
