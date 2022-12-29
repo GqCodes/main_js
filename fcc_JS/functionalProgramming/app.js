@@ -588,3 +588,21 @@ const watchList = [
     Response: 'True',
   },
 ];
+
+function getRating(watchList) {
+  // Only change code below this line
+  let averageRating;
+
+  const filteredMovies = watchList
+    .filter((movie) => movie.Director === 'Christopher Nolan')
+    .map((movie) => ({
+      rating: +movie.imdbRating,
+    }));
+
+  const sumRating = filteredMovies.reduce((acc, current) => acc + current.rating, 0);
+
+  averageRating = sumRating / filteredMovies.length;
+
+  // Only change code above this line
+  return averageRating;
+}
