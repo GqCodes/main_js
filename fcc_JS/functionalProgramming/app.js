@@ -606,3 +606,22 @@ function getRating(watchList) {
   // Only change code above this line
   return averageRating;
 }
+
+console.log(getRating(watchList));
+
+//  USE HIGH ORDER FUNCTIONS TO SOLVE COMPLEX PROBLEMS
+const squareList = (arr) => {
+  // Only change code below this line
+  return arr.filter(isPositive).filter(isDecimal).map(square);
+
+  function isPositive(num) {
+    return num >= 0;
+  }
+  function isDecimal(num) {
+    return Math.floor(num) === num;
+  }
+  function square(num) {
+    return num * num;
+  }
+  // Only change code above this line
+};
