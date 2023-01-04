@@ -670,3 +670,10 @@ function sentensify(str) {
 }
 
 sentensify('May-the-force-be-with-you');
+
+// THE EVERY METHOD
+function checkPositive(arr) {
+  return arr.every((el) => el > 0);
+}
+
+checkPositive([1, 2, 3, -4, 5]);
