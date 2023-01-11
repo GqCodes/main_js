@@ -30,3 +30,12 @@ function Dog() {
   this.color = 'brown';
   this.numLegs = 4;
 }
+
+// use constructor to create a (NEW) object
+function Dog() {
+  this.name = 'Rupert';
+  this.color = 'brown';
+  this.numLegs = 4;
+}
+
+let hound = new Dog();
