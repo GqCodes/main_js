@@ -39,3 +39,10 @@ function Dog() {
 }
 
 let hound = new Dog();
+
+// extending contructors to receive arguments
+function Dog(name, color) {
+  this.name = name;
+  this.color = color;
+  this.numLegs = 4;
+}
