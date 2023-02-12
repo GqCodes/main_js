@@ -151,3 +151,12 @@ function Dog(name) {
 
 let beagle = new Dog('Snoopy');
 Dog.prototype.isPrototypeOf(beagle);
+
+// understand the prototype chain
+function Dog(name) {
+  this.name = name;
+}
+
+let beagle = new Dog('Snoopy');
+
+Dog.prototype.isPrototypeOf(beagle); // yields true
