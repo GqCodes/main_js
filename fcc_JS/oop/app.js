@@ -1,19 +1,3 @@
-// define a constructor function
-function Dog() {
-  this.name = 'Rupert';
-  this.color = 'brown';
-  this.numLegs = 4;
-}
-
-// use constructor to create a (NEW) object
-function Dog() {
-  this.name = 'Rupert';
-  this.color = 'brown';
-  this.numLegs = 4;
-}
-
-let hound = new Dog();
-
 // extending contructors to receive arguments
 function Dog(name, color) {
   this.name = name;
