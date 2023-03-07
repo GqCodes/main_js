@@ -1,12 +1,3 @@
-// extending contructors to receive arguments
-function Dog(name, color) {
-  this.name = name;
-  this.color = color;
-  this.numLegs = 4;
-}
-
-let terrier = new Dog('grumpy', 'white');
-
 // Verify an Object's Constructor with instanceof
 function House(numBedrooms) {
   this.numBedrooms = numBedrooms;
