@@ -1,4 +1,3 @@
-
 // understand own properties
 function Bird(name) {
   this.name = name;
@@ -102,3 +101,32 @@ function Dog(name) {
 let beagle = new Dog('Snoopy');
 
 Dog.prototype.isPrototypeOf(beagle); // yields true
+
+// Fix the code below so that it evaluates to true
+Object.prototype.isPrototypeOf(Dog.prototype);
+
+// use inheritance so you dont repeat yourself
+function Cat(name) {
+  this.name = name;
+}
+
+Cat.prototype = {
+  constructor: Cat,
+};
+
+function Bear(name) {
+  this.name = name;
+}
+
+Bear.prototype = {
+  constructor: Bear,
+};
+
+function Animal() {}
+
+Animal.prototype = {
+  constructor: Animal,
+  eat: function () {
+    console.log('nom nom nom');
+  },
+};
