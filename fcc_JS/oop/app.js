@@ -231,3 +231,8 @@ function Bird() {
     return weight;
   };
 }
+
+// Immediately invoked function expression (IIFE)
+(function () {
+  console.log('A cozy nest is ready');
+})();
